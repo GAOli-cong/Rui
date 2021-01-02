@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".XiangQingActivity"
+    android:background="@drawable/xiangqing2"
+    android:orientation="vertical">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    >
+        <ImageView
+            android:padding="10dp"
+            android:id="@+id/xiangqiang_fanhui"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/fanhui"
+            android:layout_gravity="left" />
+    <TextView
+        android:id="@+id/xiangqing_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+       android:layout_centerInParent="true"
+        android:text="我是标题"/>
+</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+        <TextView
+            android:id="@+id/xiangqing_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginRight="50dp"
+            android:text="2020-20-89"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/xiangqing_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="这里kddddddddddddddddddddddd"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_height="fill_parent">
+        <com.kaisengao.likeview.like.KsgLikeView
+            android:id="@+id/xiangqing_live_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:ksg_curve_duration="4500"
+            app:ksg_default_image="@drawable/heart0"
+            app:ksg_enter_duration="1500"
+            app:layout_constraintDimensionRatio="H,1:4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+</LinearLayout>

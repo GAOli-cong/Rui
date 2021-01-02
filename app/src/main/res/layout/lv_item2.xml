@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/show_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image"
+            android:padding="3dp"
+            android:text="123232"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/point" />
+
+            <View
+                android:id="@+id/line_normal"
+                android:layout_width="3dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/image"
+                android:layout_marginLeft="26dp"
+                android:background="@color/colorAccent" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/show_title"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:padding="3dp"
+            android:text="dddddwwwwwwwwwwwwwwwwddd"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/lv2_tv_shanchu"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonstyle"
+                android:gravity="right"
+                android:text="删除" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
